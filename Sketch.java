@@ -29,7 +29,7 @@ public class Sketch extends PApplet {
   stroke(40, 40, 40);
 
   // Quadrant 1
-  for (int i = height/20; i <= height/2; i += height/20) {
+  for (int i = height/20; i <= height/2.1; i += height/20) {
     line(i, 0, i, height/2);
     line(0, i, width/2, i);
   }
