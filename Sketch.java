@@ -28,12 +28,12 @@ public class Sketch extends PApplet {
   strokeWeight((float)0.003*height);
   stroke(40, 40, 40);
 
-  //Quadrant 1
+  // Quadrant 1
   for (int i = height/20; i <= height/2; i += height/20) {
     line(i, 0, i, height/2);
     line(0, i, width/2, i);
   }
-    //Quadrant 2
+    // Quadrant 2
     fill(204, 0, 102);
     for (int circleY = ((height)/14); circleY <= ((height/14)*7); circleY += ((height)/11)) {
       for (int circleX = ((width)/14)+250; circleX <= ((width/14)*7)+250; circleX += ((width)/11)) {
@@ -41,7 +41,13 @@ public class Sketch extends PApplet {
       }
     }
 
-    //
+    // Quadrant 3
+    strokeWeight((float)0.002*height);
+    for (int i = 0; i <= height/2; i++) {
+      stroke(i, i, i);
+      line(i, height/2, i, height);
+    }
+    
   }
   
   // define other methods down here.
