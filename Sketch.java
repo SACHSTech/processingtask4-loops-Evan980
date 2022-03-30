@@ -16,7 +16,7 @@ public class Sketch extends PApplet {
    * values here i.e background, stroke, fill etc.
    */
   public void setup() {
-    background(210, 255, 173);
+    background(255, 255, 255);
   }
 
   /**
@@ -47,8 +47,22 @@ public class Sketch extends PApplet {
       stroke(i, i, i);
       line(i, height/2, i, height);
     }
-    
+
+    // Quadrant 4
+    for (int angle = 0; angle < 360; angle += 45) {
+      fill(205, 105, 0);
+      stroke(0, 0, 0);
+      strokeWeight((float)0.004*height);
+
+      pushMatrix();
+      translate((width/2)+width/4, (height/2)+height/4);
+      rotate(radians(angle));
+      ellipse(0,0,height/20,height/3);
+      popMatrix();
+    }
+
+  fill(7, 147, 20);
+  noStroke();
+  ellipse((width/2)+width/4, (height/2)+height/4, 50, 50);
   }
-  
-  // define other methods down here.
 }
