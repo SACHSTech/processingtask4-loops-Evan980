@@ -24,12 +24,16 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
+	//Stroke
+  strokeWeight((float)0.006*height);
+  stroke(40, 40, 40);
 
-    stroke(255);
-    line(50, 125, 70, 50);  
+  //Quadrant 1
+  for (int i = height/20; i <= height/2; i += height/20) {
+    line(i, 0, i, height/2);
+    line(0, i, width/2, i);
+  }
+    //Quadrant 2
   }
   
   // define other methods down here.
