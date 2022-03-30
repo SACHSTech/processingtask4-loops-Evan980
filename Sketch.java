@@ -52,7 +52,7 @@ public class Sketch extends PApplet {
     for (int angle = 0; angle < 360; angle += 45) {
       fill(205, 105, 0);
       stroke(0, 0, 0);
-      strokeWeight((float)0.004*height);
+      strokeWeight((float)0.007*height);
 
       pushMatrix();
       translate((width/2)+width/4, (height/2)+height/4);
